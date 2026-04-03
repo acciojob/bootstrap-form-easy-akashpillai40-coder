@@ -13,7 +13,7 @@
 		<!------------------Name--------------------->
 <div class="mb-3 mt-5">
     <label for="first-name-input" class="form-label">First Name</label>
-    <input type="text" class="form-control" id="first-name-input" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="first-name-input" aria-describedby="emailHelp" required >
 	<div class="invalid-feedback">
         First name required.
     </div>
@@ -21,23 +21,23 @@
 		<!------------------Last-Name--------------------->
 <div class="mb-3">
     <label for="last-name-input" class="form-label">Last Name</label>
-    <input type="text" class="form-control" id="last-name-input" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="last-name-input" aria-describedby="emailHelp" required>
 	<div class="invalid-feedback">
         Last name required.
     </div>
 </div>
 		<!------------------Email--------------------->
 		 <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="text" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="xyz@abc.com">
+    <label for="email-input" class="form-label">Email Address</label>
+    <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="xyz@abc.com" required>
 			<div class="invalid-feedback">
               Email required .
            </div> 
   </div>
 	<!------------------College--------------------->
 <div class="mb-3">
-    <label for="college-input" class="form-label">College Name</label>
-    <input type="text" class="form-control" id="college-input" aria-describedby="emailHelp">
+    <label for="college-input" class="form-label">College</label>
+    <input type="text" class="form-control" id="college-input" aria-describedby="emailHelp" required>
 	<div class="invalid-feedback">
         Please provide a valid college.
     </div>
@@ -45,8 +45,8 @@
 	<!------------------College year--------------------->
  
   <div class="mb-3">
-                <label for="college-year-input" class="form-label">Graduation Year</label>
-                <select class="form-select" id="college-year-input">
+                <label for="grad-year-select" class="form-label">Graduation Year</label>
+                <select class="form-select" id="grad-year-select" required>
                     <option selected disabled value="">Choose...</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
@@ -59,8 +59,8 @@
 </div>
 		<!------------------Roll no--------------------->
 <div class="mb-3">
-    <label for="roll" class="form-label">Roll no.</label>
-    <input type="number" class="form-control" id="roll" aria-describedby="emailHelp">
+    <label for="roll-no-input" class="form-label">Roll No.</label>
+    <input type="number" class="form-control" id="roll-no-input" aria-describedby="emailHelp"  required>
 	         <div class="invalid-feedback">
               Please provide a Roll no.
              </div>
@@ -68,8 +68,8 @@
 		<!------------------Check_box--------------------->
 		
 <div class="mb-3 form-check">
-    <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
-	<input type="checkbox" class="form-check-input" id="conditions-checkbox">
+	<input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+    <label for="conditions-checkbox" class="form-check-label">Agree to terms and conditions</label>
 	            <div class="invalid-feedback">
                 You must agree before submitting.
                 </div>
